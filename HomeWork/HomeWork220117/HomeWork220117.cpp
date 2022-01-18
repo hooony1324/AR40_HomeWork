@@ -90,7 +90,7 @@ int main()
         int a = 0;
     }
     {
-        int Count = CountLast("aba tdffff eceb dddfffd", 2, "ce");
+        int Count = CountLast("aba tdffff eceb dddfffd", 13, "ce");
         int a = 0;
     }
 
