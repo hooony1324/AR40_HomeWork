@@ -45,7 +45,10 @@ public:
 
 	ConsoleVector operator+(const ConsoleVector& _Other)
 	{
-		return ConsoleVector(x_ += _Other.x_, y_ += _Other.y_);
+		ConsoleVector Result;
+		Result.x_ = x_ + _Other.x_;
+		Result.y_ = y_ + _Other.y_;
+		return Result;
 	}
 
 	ConsoleVector operator+=(const ConsoleVector& _Other)

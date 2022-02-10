@@ -19,11 +19,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ConsoleGlobalInst.cpp" />
     <ClCompile Include="ConsoleMath.cpp">
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="ConsoleObject.cpp" />
     <ClCompile Include="ConsoleScreen.cpp" />
+    <ClCompile Include="Monster.cpp" />
     <ClCompile Include="Player.cpp">
       <SubType>
       </SubType>
@@ -34,10 +37,13 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ConsoleGlobalInst.h" />
     <ClInclude Include="ConsoleMath.h">
       <SubType>
       </SubType>
     </ClInclude>
+    <ClInclude Include="ConsoleObject.h" />
+    <ClInclude Include="Monster.h" />
     <ClInclude Include="Player.h">
       <SubType>
       </SubType>

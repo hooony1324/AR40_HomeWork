@@ -95,7 +95,7 @@ void TextScreen::SetPixel(int _x, int _y, const char* _DefaultValue)
 
 bool TextScreen::IsValidPixel(ConsoleVector _Pos)
 {
-	if (_Pos.x_ >= Size_.x_ || _Pos.y_ >= Size_.y_)
+	if (_Pos.x_ >= Size_.x_ || _Pos.y_ >= Size_.y_ || _Pos.x_ < 0 || _Pos.y_ < 0)
 	{
 		return false;
 	}
