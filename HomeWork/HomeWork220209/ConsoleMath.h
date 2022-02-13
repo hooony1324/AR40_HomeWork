@@ -43,9 +43,10 @@ public:
 		return { x_ / 2, y_ / 2 };
 	}
 
+	// vec3 = vec1 + vec2;
 	ConsoleVector operator+(const ConsoleVector& _Other)
 	{
-		ConsoleVector Result;
+		ConsoleVector Result(x_, y_);
 		Result.x_ = x_ + _Other.x_;
 		Result.y_ = y_ + _Other.y_;
 		return Result;
