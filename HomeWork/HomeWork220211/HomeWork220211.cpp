@@ -1,5 +1,6 @@
 ﻿#include <iostream>
 
+// 숙제 : operator()() 사용해보기
 int count = 0;
 
 class Test
