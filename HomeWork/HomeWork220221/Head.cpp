@@ -19,6 +19,8 @@ Head::~Head()
 			PtrBody = nullptr;
 		}
 	}
+
+	AllBody.clear();
 	
 }
 
