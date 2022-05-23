@@ -152,6 +152,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Enums.h" />
+    <ClInclude Include="Hexagram.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
     <ClInclude Include="TestContentsCore.h">
       <SubType>
       </SubType>
@@ -162,6 +166,10 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Hexagram.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="TestContentsCore.cpp">
       <SubType>
       </SubType>

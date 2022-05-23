@@ -10,6 +10,9 @@
     <Filter Include="Global">
       <UniqueIdentifier>{841dd79c-eefd-4349-a9b3-5e026d472ccf}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Actor">
+      <UniqueIdentifier>{4d778e30-b30d-42be-80fe-026eaba18377}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TestContentsCore.h">
@@ -21,6 +24,9 @@
     <ClInclude Include="Enums.h">
       <Filter>Global</Filter>
     </ClInclude>
+    <ClInclude Include="Hexagram.h">
+      <Filter>Actor</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="TestContentsCore.cpp">
@@ -28,6 +34,9 @@
     </ClCompile>
     <ClCompile Include="TestLevel.cpp">
       <Filter>Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Hexagram.cpp">
+      <Filter>Actor</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

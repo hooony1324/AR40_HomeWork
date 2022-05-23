@@ -23,10 +23,12 @@ void GameEngineCore::EngineResourcesInitialize()
 		// 3       2
 
 		std::vector<float4> Vertex;
-		Vertex.push_back(float4(-0.5f, 0.5f));
-		Vertex.push_back(float4(0.5f, 0.5f));
-		Vertex.push_back(float4(0.5f, -0.5f));
-		Vertex.push_back(float4(-0.5f, -0.5f));
+		Vertex.push_back(float4( 0, -2.0f ));
+		Vertex.push_back(float4(1.7f, -1.0f));
+		Vertex.push_back(float4(1.7f, 1.0f));
+		Vertex.push_back(float4( 0, 2.0f));
+		Vertex.push_back(float4(-1.7f, 1.0f));
+		Vertex.push_back(float4(-1.7f, -1.0f));
 
 		GameEngineVertexBuffer::Create("Rect", Vertex);
 	}
@@ -46,13 +48,13 @@ void GameEngineCore::EngineResourcesInitialize()
 
 		// 첫번째
 		Index[0] = 0;
-		Index[1] = 1;
-		Index[2] = 2;
+		Index[1] = 2;
+		Index[2] = 4;
 
 		// 두번째
-		Index[3] = 0;
-		Index[4] = 2;
-		Index[5] = 3;
+		Index[3] = 1;
+		Index[4] = 3;
+		Index[5] = 5;
 
 		GameEngineIndexBuffer::Create("Rect", Index);
 	}

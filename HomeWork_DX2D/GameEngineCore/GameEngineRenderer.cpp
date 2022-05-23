@@ -7,6 +7,8 @@
 #include "GameEngineVertexBuffer.h"
 #include "GameEngineIndexBuffer.h"
 
+#include <GameEngineBase/GameEngineMath.h>
+
 GameEngineRenderer::GameEngineRenderer()
 {
 }
@@ -32,6 +34,14 @@ void GameEngineRenderer::Render(float _DeltaTime)
 	std::vector<float4> CopyBuffer;
 	CopyBuffer.resize(Index->Indexs.size());
 
+	// ÀÚÀü
+	{
+		float Degree = _DeltaTime * 30.0f;
+		for (auto& Point : Vertex->Vertexs)
+		{
+			Point = float4::VectorRotationToDegreeZ(Point, Degree);
+		}
+	}
 
 
 	for (size_t i = 0; i < Index->Indexs.size(); i++)
@@ -52,9 +62,10 @@ void GameEngineRenderer::Render(float _DeltaTime)
 		CopyBuffer[i] += GetActor()->GetTransform().GetPosition();
 
 
-
 		DrawVertex[i] = CopyBuffer[i].GetConvertWindowPOINT();
 	}
+
+
 
 
 	for (size_t i = 0; i < DrawVertex.size(); i += 3)
