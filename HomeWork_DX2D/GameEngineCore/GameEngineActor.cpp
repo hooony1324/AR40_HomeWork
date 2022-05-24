@@ -1,12 +1,12 @@
 #include "GameEngineActor.h"
 #include "GameEngineComponent.h"
 
-GameEngineActor::GameEngineActor()
+GameEngineActor::GameEngineActor() 
 	:ParentLevel(nullptr)
 {
 }
 
-GameEngineActor::~GameEngineActor()
+GameEngineActor::~GameEngineActor() 
 {
 	for (GameEngineComponent* Com : AllComList)
 	{
